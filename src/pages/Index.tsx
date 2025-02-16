@@ -26,8 +26,8 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-gray-50 px-4">
-      <div className="w-full max-w-2xl space-y-6">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-gray-50 px-2 sm:px-4">
+      <div className="w-full max-w-3xl space-y-6">
         <h1 className="text-2xl font-medium text-center text-gray-900">
           Phone Verification
         </h1>
@@ -36,7 +36,7 @@ const Index = () => {
           <div className="phone-input-container w-full">
             <PhoneInput
               international
-              countryCallingCodeEditable={false}
+              countryCallingCodeEditable={true}
               defaultCountry="US"
               value={phoneNumber}
               onChange={setPhoneNumber}
