@@ -40,13 +40,13 @@ const Index = () => {
               defaultCountry="US"
               value={phoneNumber}
               onChange={setPhoneNumber}
-              className="w-full p-4 rounded-2xl border border-gray-200 focus:border-blue-500 outline-none transition-all duration-200"
+              className="w-full p-2 rounded-2xl border border-gray-200 focus:border-blue-500 outline-none transition-all duration-200"
             />
           </div>
           
           <button
             onClick={handleSignIn}
-            className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-4 rounded-2xl transition-all duration-200 transform hover:scale-[0.99] active:scale-[0.97]"
+            className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 rounded-2xl transition-all duration-200 transform hover:scale-[0.99] active:scale-[0.97]"
           >
             Sign in
           </button>
