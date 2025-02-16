@@ -37,6 +37,34 @@
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease-out;
+}
+
 /* Custom styles for phone input */
 .PhoneInput {
   display: flex;
@@ -75,13 +103,6 @@
   cursor: pointer;
 }
 
-.PhoneInputCountryIcon {
-  width: 2rem;
-  height: 1.5rem;
-  border-radius: 0.25rem;
-  overflow: hidden;
-}
-
 .PhoneInputInput {
   flex: 1;
   min-width: 0;
@@ -95,3 +116,16 @@
   outline: none;
 }
 
+/* Hide flags and show country codes instead */
+.PhoneInputCountryIcon {
+  display: none !important;
+}
+
+/* Style for country select */
+.PhoneInputCountry select {
+  opacity: 1 !important;
+  position: relative !important;
+  height: auto !important;
+  width: auto !important;
+  padding: 0.25rem !important;
+}
